@@ -12,12 +12,48 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // app flavour
+        flavorDimensions "default"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("release-key.keystore")
+            storePassword 'password'
+            keyAlias 'alias'
+            keyPassword 'journaldev'
+        }
+    }
+
+    productFlavors{
+
+        free{
+            applicationId "com.dalakoti07.androidproductflavors.free"
+        }
+
+        paid{
+            applicationId "com.dalakoti07.androidproductflavors.paid"
+        }
     }
 
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            buildConfigField "String", "TYPE", '"I AM A DEBUG NINJA"'
+        }
+
+        beta{
+            signingConfig signingConfigs.release
+            applicationIdSuffix ".beta"
+            versionNameSuffix "-beta"
+            buildConfigField "String", "TYPE", '"I AM A BETA NINJA"'
         }
     }
 }
