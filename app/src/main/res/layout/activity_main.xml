@@ -33,12 +33,26 @@
         app:state="sad" />
 
     <com.dalakoti07.android.BezierCurve
-        android:id="@+id/brezier_curve"
+        android:id="@+id/bezier_curve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+
+<!--    unable to place it between top and bottom of the bezierCurve-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:text="Thug life"
+        android:textColor="#000"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
