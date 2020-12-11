@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 
 class BezierCurve(context: Context) : View(context) {
@@ -16,8 +17,9 @@ class BezierCurve(context: Context) : View(context) {
     private var backGroundColor = Color.YELLOW
 
     //size of the the view
-    private var viewHeight=100
-    private var viewWidth=300
+    private var viewHeight=300F
+    private var viewWidth=1100F
+    private var extraHeight=200F
 
     private val curvePath = Path()
 
@@ -33,21 +35,26 @@ class BezierCurve(context: Context) : View(context) {
         paint.style = Paint.Style.FILL
 
         curvePath.reset()
-        curvePath.moveTo(0F,100F)
+        curvePath.moveTo(0F,viewHeight)
 
         //create bezier curve
-        curvePath.quadTo(150F,0F ,300F ,100F )
+        curvePath.quadTo(viewWidth/2,0F ,viewWidth ,viewHeight )
+
+        //create rectangle
+        curvePath.lineTo(viewWidth,viewHeight+extraHeight)
+        curvePath.lineTo(0F,viewHeight+extraHeight)
+
         curvePath.close()
 
         canvas.drawPath(curvePath,paint)
     }
 
-    /*override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+    //width: height 's ratio should be 2:1
+    //setMeasuredDimension(measuredWidth, measuredHeight/2)
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-        // 1
-        val smaller = Math.min(measuredWidth, measuredHeight)
-        val greater=Math.max(measuredWidth,measuredHeight)
-        // 2
-        setMeasuredDimension(size, size)
-    }*/
+//        val smaller = Math.min(measuredWidth, measuredHeight)
+//        val greater=Math.max(widthMeasureSpec,heightMeasureSpec)
+        setMeasuredDimension(measuredWidth, measuredHeight/2)
+    }
 }
