@@ -55,6 +55,6 @@ class BezierCurve(context: Context) : View(context) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
 //        val smaller = Math.min(measuredWidth, measuredHeight)
 //        val greater=Math.max(widthMeasureSpec,heightMeasureSpec)
-        setMeasuredDimension(measuredWidth, measuredHeight/2)
+        setMeasuredDimension(measuredWidth, measuredWidth/2)
     }
 }
