@@ -9,7 +9,7 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 
-class BezierCurve(context: Context) : View(context) {
+class BezierCurve(context: Context, attrs: AttributeSet) : View(context, attrs){
 
     // Paint object for coloring and styling
     private val paint = Paint()
