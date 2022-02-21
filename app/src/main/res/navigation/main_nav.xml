@@ -11,7 +11,11 @@
         <action
             android:id="@+id/action_sampleFragment_to_sampleBottomSheet"
             app:destination="@id/sampleBottomSheet" />
+        <action
+            android:id="@+id/action_sampleFragment_to_sampleFragment2"
+            app:destination="@id/sampleFragment2" />
     </fragment>
+
     <dialog
         android:id="@+id/sampleBottomSheet"
         android:name="com.dalakoti07.android.frags.SampleBottomSheet"
@@ -24,4 +28,8 @@
         android:id="@+id/sampleDialogFragment"
         android:name="com.dalakoti07.android.frags.SampleDialogFragment"
         android:label="SampleDialogFragment" />
+    <fragment
+        android:id="@+id/sampleFragment2"
+        android:name="com.dalakoti07.android.frags.SampleFragment2"
+        android:label="SampleFragment2" />
 </navigation>
