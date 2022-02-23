@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdkVersion 31
@@ -17,6 +17,17 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        useIR = true
+        jvmTarget = JavaVersion.VERSION_11.toString()
+        freeCompilerArgs += "-Xjvm-default=all"
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -26,6 +37,7 @@ android {
 
     buildFeatures {
         compose true
+        dataBinding true
     }
     composeOptions {
         kotlinCompilerExtensionVersion 	"1.1.0"
@@ -55,5 +67,11 @@ dependencies {
     implementation "androidx.compose.runtime:runtime-livedata:1.1.0"
     implementation "androidx.compose.ui:ui-tooling:1.1.0"
     implementation "com.google.android.material:compose-theme-adapter:1.1.4"
+    implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.0'
+    implementation "com.google.accompanist:accompanist-pager:0.12.0"
+    implementation "com.google.accompanist:accompanist-pager-indicators:0.12.0"
+
+    // other dependencies
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 
 }
