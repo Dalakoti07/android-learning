@@ -26,21 +26,22 @@ class AccelerationSensorUseCase {
     private var previousTimeStamp: Long = 0L
 
     private var previousAcceleration: Float = 0f
+    private var accelerationChange: Float = 0f
 
     private val debounceBetweenTwoReadings = 1_000L
 
-    private fun emitOnlyWhenSignificantChange(current: XYZCoordinates): Boolean{
+    private fun calculateChangeInAcceleration(current: XYZCoordinates){
         if(previousReading==null){
-            return true
+            return
         }
         val currentAcceleration = sqrt(current.x * current.x
                     + current.y * current.y
                 + current.z * current.z
         )
-        Log.d(TAG, "current accn: $currentAcceleration")
         val difference = abs(currentAcceleration - previousAcceleration)
         previousAcceleration = currentAcceleration
-        return difference>0.0001
+        accelerationChange = difference
+        Log.d(TAG, "current acc: $currentAcceleration and change: $difference")
     }
 
     fun startSensing(context: Context) = callbackFlow {
@@ -60,14 +61,13 @@ class AccelerationSensorUseCase {
                         y = event.values[1],
                         z = event.values[2],
                     )
-                    Log.d(TAG, "onSensorChanged: $data")
-                    if(emitOnlyWhenSignificantChange(
-                            data
-                        )){
-                        trySend(
-                            previousAcceleration
-                        )
-                    }
+                    // Log.d(TAG, "onSensorChanged: $data")
+                    calculateChangeInAcceleration(
+                        data
+                    )
+                    trySend(
+                        accelerationChange
+                    )
                     previousTimeStamp = currentTime
                     previousReading = data
                 }
