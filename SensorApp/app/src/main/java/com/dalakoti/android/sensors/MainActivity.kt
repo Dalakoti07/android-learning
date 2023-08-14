@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 .collect {
                     Log.d(TAG, "data: $it")
                     tvLastTime.text = timeStampToString(System.currentTimeMillis())
-                    textView.text = "x: ${it.x}, y: ${it.y}, z: ${it.z}"
+                    textView.text = "x: ${it.x}\ny: ${it.y}\nz: ${it.z}"
                 }
         }
     }
