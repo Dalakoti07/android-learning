@@ -12,23 +12,16 @@ import kotlinx.coroutines.launch
 import java.util.Calendar
 import java.util.Locale
 import java.util.TimeZone
+import kotlin.math.roundToInt
 
 private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
-    private val deviceSensors: MutableList<Sensor> = mutableListOf()
-
     private val accelerationSensorUseCase = AccelerationSensorUseCase()
 
     private lateinit var textView: TextView
     private lateinit var tvLastTime: TextView
-
-    private val requestPermissionLauncher = registerForActivityResult(
-        ActivityResultContracts.RequestPermission()
-    ) { granted ->
-
-    }
 
     private fun timeStampToString(timestamp: Long,format:String? = "dd MMM yyyy, hh:mm a"): String {
         val cal = Calendar.getInstance(Locale.ENGLISH)
@@ -50,9 +43,9 @@ class MainActivity : AppCompatActivity() {
                 context = this@MainActivity,
             )
                 .collect {
-                    Log.d(TAG, "data: $it")
+                    // Log.d(TAG, "data: $it")
                     tvLastTime.text = timeStampToString(System.currentTimeMillis())
-                    textView.text = "x: ${it.x}\ny: ${it.y}\nz: ${it.z}"
+                    textView.text = "${it.times(1000.0).roundToInt()/1000.0}"
                 }
         }
     }

@@ -8,6 +8,8 @@ import android.hardware.SensorManager
 import android.util.Log
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
+import kotlin.math.abs
+import kotlin.math.sqrt
 
 private const val TAG = "AccelerationSensorUseCa"
 
@@ -23,17 +25,22 @@ class AccelerationSensorUseCase {
     private var previousReading : XYZCoordinates? = null
     private var previousTimeStamp: Long = 0L
 
+    private var previousAcceleration: Float = 0f
+
     private val debounceBetweenTwoReadings = 1_000L
 
     private fun emitOnlyWhenSignificantChange(current: XYZCoordinates): Boolean{
         if(previousReading==null){
             return true
         }
-        var difference = 0f
-        difference += kotlin.math.abs(current.x - previousReading!!.x)
-        difference += kotlin.math.abs(current.y - previousReading!!.y)
-        difference += kotlin.math.abs(current.z - previousReading!!.z)
-        return difference>0.05
+        val currentAcceleration = sqrt(current.x * current.x
+                    + current.y * current.y
+                + current.z * current.z
+        )
+        Log.d(TAG, "current accn: $currentAcceleration")
+        val difference = abs(currentAcceleration - previousAcceleration)
+        previousAcceleration = currentAcceleration
+        return difference>0.0001
     }
 
     fun startSensing(context: Context) = callbackFlow {
@@ -58,7 +65,7 @@ class AccelerationSensorUseCase {
                             data
                         )){
                         trySend(
-                            data
+                            previousAcceleration
                         )
                     }
                     previousTimeStamp = currentTime
