@@ -16,7 +16,7 @@ import kotlin.math.roundToInt
 
 private const val TAG = "MainActivity"
 
-fun Float.to3DecimalPlace(): Double{
+fun Double.to3DecimalPlace(): Double{
     return this.times(100.0).roundToInt()/100.0
 }
 
@@ -26,10 +26,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var textView: TextView
     private lateinit var tvLastTime: TextView
-
-    private val sensorReadings = mutableListOf<Float>()
-
-    private val windowSize = 3
 
     private fun timeStampToString(timestamp: Long,format:String? = "dd MMM yyyy, hh:mm a"): String {
         val cal = Calendar.getInstance(Locale.ENGLISH)
@@ -51,17 +47,9 @@ class MainActivity : AppCompatActivity() {
                 context = this@MainActivity,
             )
                 .collect {
-                    // Log.d(TAG, "data: $it")
+                     Log.d(TAG, "data: $it")
                     tvLastTime.text = timeStampToString(System.currentTimeMillis())
-                    val sensorReading = it
-                    if(sensorReadings.size == windowSize){
-                        sensorReadings.removeFirst()
-                        sensorReadings.add(sensorReading)
-                        val avgValue = sensorReadings.sum()/windowSize
-                        textView.text = "${avgValue.to3DecimalPlace()}"
-                    }else{
-                        sensorReadings.add(sensorReading)
-                    }
+                    textView.text = "${it.to3DecimalPlace()}"
                 }
         }
     }

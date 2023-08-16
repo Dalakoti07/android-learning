@@ -8,12 +8,11 @@ import android.hardware.SensorManager
 import android.util.Log
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
-import kotlin.math.abs
-import kotlin.math.sqrt
+import java.lang.Double.max
 
 private const val TAG = "AccelerationSensorUseCa"
 
-data class XYZCoordinates(
+data class XYZAccelerations(
     val x: Float,
     val y: Float,
     val z: Float
@@ -22,26 +21,38 @@ data class XYZCoordinates(
 class AccelerationSensorUseCase {
     private lateinit var sensorManager: SensorManager
 
-    private var previousReading : XYZCoordinates? = null
+    private var previousReading : XYZAccelerations? = null
     private var previousTimeStamp: Long = 0L
+    private var previousSendTimeStamp: Long = 0L
 
-    private var previousAcceleration: Float = 0f
-    private var accelerationChange: Float = 0f
+    // in milli seconds, converted to nano seconds
+    private val eventEmitTime = 500L * 1e6
 
-    private val debounceBetweenTwoReadings = 1_000L
+    private var currentSpeed: Double = 0.0
 
-    private fun calculateChangeInAcceleration(current: XYZCoordinates){
+    // speed array
+    private val lastNSpeeds = mutableListOf<Double>()
+    private val windowSize = 3
+
+    private fun handleSensorData(current: XYZAccelerations, eventTimeStamp: Long,){
         if(previousReading==null){
             return
         }
-        val currentAcceleration = sqrt(current.x * current.x
-                    + current.y * current.y
-                + current.z * current.z
-        )
-        val difference = abs(currentAcceleration - previousAcceleration)
-        previousAcceleration = currentAcceleration
-        accelerationChange = difference
-        Log.d(TAG, "current acc: $currentAcceleration and change: $difference")
+        Log.d(TAG, "current acc: ${current.x} and speed: $currentSpeed")
+        // convert time to seconds from nano seconds
+        val speedChange = (current.x * ((previousTimeStamp - eventTimeStamp)* 1e-9))
+        currentSpeed += speedChange
+        currentSpeed = max(currentSpeed, 0.0)
+
+        // update array
+        if(lastNSpeeds.size == windowSize){
+            lastNSpeeds.removeFirst()
+            lastNSpeeds.add(currentSpeed)
+        }else{
+            lastNSpeeds.add(currentSpeed)
+        }
+
+        Log.d(TAG, "speed-change: $speedChange and speed: $currentSpeed ")
     }
 
     fun startSensing(context: Context) = callbackFlow {
@@ -54,23 +65,26 @@ class AccelerationSensorUseCase {
                 if(event?.values?.size!=3){
                     return
                 }
-                val currentTime = System.currentTimeMillis()
-                if(previousTimeStamp == 0L || currentTime-previousTimeStamp>=debounceBetweenTwoReadings){
-                    val data = XYZCoordinates(
-                        x = event.values[0],
-                        y = event.values[1],
-                        z = event.values[2],
-                    )
+                val currentTime = event.timestamp
+                val data = XYZAccelerations(
+                    x = event.values[0],
+                    y = event.values[1],
+                    z = event.values[2],
+                )
+                handleSensorData(
+                    data,
+                    event.timestamp,
+                )
+                // Log.d(TAG, "previous: $previousSendTimeStamp and current: $currentTime ")
+                if(previousSendTimeStamp == 0L || currentTime-previousSendTimeStamp>=eventEmitTime){
                     // Log.d(TAG, "onSensorChanged: $data")
-                    calculateChangeInAcceleration(
-                        data
-                    )
                     trySend(
-                        accelerationChange
+                        currentSpeed
                     )
-                    previousTimeStamp = currentTime
-                    previousReading = data
+                    previousSendTimeStamp = event.timestamp
                 }
+                previousTimeStamp = event.timestamp
+                previousReading = data
             }
 
             override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
