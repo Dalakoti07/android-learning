@@ -34,6 +34,7 @@ class AccelerationSensorUseCase {
     private val lastNSpeeds = mutableListOf<Double>()
     private val windowSize = 3
 
+    // emit speed in meter per seconds
     private fun handleSensorData(current: XYZAccelerations, eventTimeStamp: Long,){
         if(previousReading==null){
             return
@@ -77,9 +78,9 @@ class AccelerationSensorUseCase {
                 )
                 // Log.d(TAG, "previous: $previousSendTimeStamp and current: $currentTime ")
                 if(previousSendTimeStamp == 0L || currentTime-previousSendTimeStamp>=eventEmitTime){
-                    // Log.d(TAG, "onSensorChanged: $data")
+                    // emit average
                     trySend(
-                        currentSpeed
+                        lastNSpeeds.sum()/windowSize
                     )
                     previousSendTimeStamp = event.timestamp
                 }
@@ -114,7 +115,7 @@ class AccelerationSensorUseCase {
             eventListener,
             sensor,
 //            SensorManager.SENSOR_DELAY_NORMAL,
-            SensorManager.SENSOR_DELAY_UI,
+            SensorManager.SENSOR_DELAY_FASTEST,
         )
 
         awaitClose {
