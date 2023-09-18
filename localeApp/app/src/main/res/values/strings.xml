@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">localeApp</string>
+    <string name="hello">Hello World!</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="change">Change Language</string>
+</resources>
