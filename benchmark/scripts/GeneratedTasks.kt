@@ -1,8 +1,14 @@
 
 object Task1: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 1)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -12,9 +18,15 @@ object Task1: SimpleTasks {
 }
 
 object Task2: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 2)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -24,9 +36,15 @@ object Task2: SimpleTasks {
 }
 
 object Task3: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 3)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -36,9 +54,15 @@ object Task3: SimpleTasks {
 }
 
 object Task4: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 4)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -48,9 +72,15 @@ object Task4: SimpleTasks {
 }
 
 object Task5: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 5)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -60,9 +90,15 @@ object Task5: SimpleTasks {
 }
 
 object Task6: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 6)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -72,9 +108,15 @@ object Task6: SimpleTasks {
 }
 
 object Task7: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 7)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -84,9 +126,15 @@ object Task7: SimpleTasks {
 }
 
 object Task8: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 8)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -96,9 +144,15 @@ object Task8: SimpleTasks {
 }
 
 object Task9: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 9)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -108,9 +162,15 @@ object Task9: SimpleTasks {
 }
 
 object Task10: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 10)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -120,9 +180,15 @@ object Task10: SimpleTasks {
 }
 
 object Task11: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 11)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -132,9 +198,15 @@ object Task11: SimpleTasks {
 }
 
 object Task12: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 12)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -144,9 +216,15 @@ object Task12: SimpleTasks {
 }
 
 object Task13: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 13)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -156,9 +234,15 @@ object Task13: SimpleTasks {
 }
 
 object Task14: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 14)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -168,9 +252,15 @@ object Task14: SimpleTasks {
 }
 
 object Task15: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 15)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -180,9 +270,15 @@ object Task15: SimpleTasks {
 }
 
 object Task16: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 16)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -192,9 +288,15 @@ object Task16: SimpleTasks {
 }
 
 object Task17: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 17)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -204,9 +306,15 @@ object Task17: SimpleTasks {
 }
 
 object Task18: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 18)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -216,9 +324,15 @@ object Task18: SimpleTasks {
 }
 
 object Task19: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 19)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -228,9 +342,15 @@ object Task19: SimpleTasks {
 }
 
 object Task20: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 20)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -240,9 +360,15 @@ object Task20: SimpleTasks {
 }
 
 object Task21: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 21)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -252,9 +378,15 @@ object Task21: SimpleTasks {
 }
 
 object Task22: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 22)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -264,9 +396,15 @@ object Task22: SimpleTasks {
 }
 
 object Task23: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 23)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -276,9 +414,15 @@ object Task23: SimpleTasks {
 }
 
 object Task24: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 24)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -288,9 +432,15 @@ object Task24: SimpleTasks {
 }
 
 object Task25: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 25)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -300,9 +450,15 @@ object Task25: SimpleTasks {
 }
 
 object Task26: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 26)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -312,9 +468,15 @@ object Task26: SimpleTasks {
 }
 
 object Task27: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 27)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -324,9 +486,15 @@ object Task27: SimpleTasks {
 }
 
 object Task28: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 28)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -336,9 +504,15 @@ object Task28: SimpleTasks {
 }
 
 object Task29: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 29)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -348,9 +522,15 @@ object Task29: SimpleTasks {
 }
 
 object Task30: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 30)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -360,9 +540,15 @@ object Task30: SimpleTasks {
 }
 
 object Task31: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 31)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -372,9 +558,15 @@ object Task31: SimpleTasks {
 }
 
 object Task32: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 32)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -384,9 +576,15 @@ object Task32: SimpleTasks {
 }
 
 object Task33: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 33)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -396,9 +594,15 @@ object Task33: SimpleTasks {
 }
 
 object Task34: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 34)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -408,9 +612,15 @@ object Task34: SimpleTasks {
 }
 
 object Task35: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 35)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -420,9 +630,15 @@ object Task35: SimpleTasks {
 }
 
 object Task36: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 36)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -432,9 +648,15 @@ object Task36: SimpleTasks {
 }
 
 object Task37: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 37)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -444,9 +666,15 @@ object Task37: SimpleTasks {
 }
 
 object Task38: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 38)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -456,9 +684,15 @@ object Task38: SimpleTasks {
 }
 
 object Task39: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 39)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -468,9 +702,15 @@ object Task39: SimpleTasks {
 }
 
 object Task40: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 40)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -480,9 +720,15 @@ object Task40: SimpleTasks {
 }
 
 object Task41: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 41)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -492,9 +738,15 @@ object Task41: SimpleTasks {
 }
 
 object Task42: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 42)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -504,9 +756,15 @@ object Task42: SimpleTasks {
 }
 
 object Task43: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 43)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -516,9 +774,15 @@ object Task43: SimpleTasks {
 }
 
 object Task44: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 44)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -528,9 +792,15 @@ object Task44: SimpleTasks {
 }
 
 object Task45: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 45)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -540,9 +810,15 @@ object Task45: SimpleTasks {
 }
 
 object Task46: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 46)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -552,9 +828,15 @@ object Task46: SimpleTasks {
 }
 
 object Task47: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 47)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -564,9 +846,15 @@ object Task47: SimpleTasks {
 }
 
 object Task48: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 48)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -576,9 +864,15 @@ object Task48: SimpleTasks {
 }
 
 object Task49: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 49)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -588,9 +882,15 @@ object Task49: SimpleTasks {
 }
 
 object Task50: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 50)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -600,9 +900,15 @@ object Task50: SimpleTasks {
 }
 
 object Task51: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 51)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -612,9 +918,15 @@ object Task51: SimpleTasks {
 }
 
 object Task52: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 52)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -624,9 +936,15 @@ object Task52: SimpleTasks {
 }
 
 object Task53: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 53)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -636,9 +954,15 @@ object Task53: SimpleTasks {
 }
 
 object Task54: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 54)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -648,9 +972,15 @@ object Task54: SimpleTasks {
 }
 
 object Task55: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 55)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -660,9 +990,15 @@ object Task55: SimpleTasks {
 }
 
 object Task56: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 56)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -672,9 +1008,15 @@ object Task56: SimpleTasks {
 }
 
 object Task57: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 57)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -684,9 +1026,15 @@ object Task57: SimpleTasks {
 }
 
 object Task58: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 58)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -696,9 +1044,15 @@ object Task58: SimpleTasks {
 }
 
 object Task59: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 59)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -708,9 +1062,15 @@ object Task59: SimpleTasks {
 }
 
 object Task60: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 60)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -720,9 +1080,15 @@ object Task60: SimpleTasks {
 }
 
 object Task61: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 61)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -732,9 +1098,15 @@ object Task61: SimpleTasks {
 }
 
 object Task62: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 62)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -744,9 +1116,15 @@ object Task62: SimpleTasks {
 }
 
 object Task63: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 63)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -756,9 +1134,15 @@ object Task63: SimpleTasks {
 }
 
 object Task64: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 64)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -768,9 +1152,15 @@ object Task64: SimpleTasks {
 }
 
 object Task65: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 65)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -780,9 +1170,15 @@ object Task65: SimpleTasks {
 }
 
 object Task66: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 66)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -792,9 +1188,15 @@ object Task66: SimpleTasks {
 }
 
 object Task67: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 67)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -804,9 +1206,15 @@ object Task67: SimpleTasks {
 }
 
 object Task68: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 68)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -816,9 +1224,15 @@ object Task68: SimpleTasks {
 }
 
 object Task69: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 69)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -828,9 +1242,15 @@ object Task69: SimpleTasks {
 }
 
 object Task70: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 70)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -840,9 +1260,15 @@ object Task70: SimpleTasks {
 }
 
 object Task71: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 71)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -852,9 +1278,15 @@ object Task71: SimpleTasks {
 }
 
 object Task72: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 72)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -864,9 +1296,15 @@ object Task72: SimpleTasks {
 }
 
 object Task73: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 73)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -876,9 +1314,15 @@ object Task73: SimpleTasks {
 }
 
 object Task74: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 74)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -888,9 +1332,15 @@ object Task74: SimpleTasks {
 }
 
 object Task75: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 75)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -900,9 +1350,15 @@ object Task75: SimpleTasks {
 }
 
 object Task76: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 76)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -912,9 +1368,15 @@ object Task76: SimpleTasks {
 }
 
 object Task77: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 77)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -924,9 +1386,15 @@ object Task77: SimpleTasks {
 }
 
 object Task78: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 78)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -936,9 +1404,15 @@ object Task78: SimpleTasks {
 }
 
 object Task79: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 79)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -948,9 +1422,15 @@ object Task79: SimpleTasks {
 }
 
 object Task80: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 80)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -960,9 +1440,15 @@ object Task80: SimpleTasks {
 }
 
 object Task81: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 81)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -972,9 +1458,15 @@ object Task81: SimpleTasks {
 }
 
 object Task82: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 82)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -984,9 +1476,15 @@ object Task82: SimpleTasks {
 }
 
 object Task83: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 83)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -996,9 +1494,15 @@ object Task83: SimpleTasks {
 }
 
 object Task84: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 84)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1008,9 +1512,15 @@ object Task84: SimpleTasks {
 }
 
 object Task85: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 85)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1020,9 +1530,15 @@ object Task85: SimpleTasks {
 }
 
 object Task86: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 86)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1032,9 +1548,15 @@ object Task86: SimpleTasks {
 }
 
 object Task87: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 87)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1044,9 +1566,15 @@ object Task87: SimpleTasks {
 }
 
 object Task88: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 88)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1056,9 +1584,15 @@ object Task88: SimpleTasks {
 }
 
 object Task89: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 89)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1068,9 +1602,15 @@ object Task89: SimpleTasks {
 }
 
 object Task90: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 90)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1080,9 +1620,15 @@ object Task90: SimpleTasks {
 }
 
 object Task91: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 91)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1092,9 +1638,15 @@ object Task91: SimpleTasks {
 }
 
 object Task92: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 92)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1104,9 +1656,15 @@ object Task92: SimpleTasks {
 }
 
 object Task93: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 93)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1116,9 +1674,15 @@ object Task93: SimpleTasks {
 }
 
 object Task94: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 94)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1128,9 +1692,15 @@ object Task94: SimpleTasks {
 }
 
 object Task95: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 95)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1140,9 +1710,15 @@ object Task95: SimpleTasks {
 }
 
 object Task96: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 96)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1152,9 +1728,15 @@ object Task96: SimpleTasks {
 }
 
 object Task97: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 97)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1164,9 +1746,15 @@ object Task97: SimpleTasks {
 }
 
 object Task98: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 98)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1176,9 +1764,15 @@ object Task98: SimpleTasks {
 }
 
 object Task99: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 99)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1188,9 +1782,15 @@ object Task99: SimpleTasks {
 }
 
 object Task100: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 100)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1200,9 +1800,15 @@ object Task100: SimpleTasks {
 }
 
 object Task101: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 101)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1212,9 +1818,15 @@ object Task101: SimpleTasks {
 }
 
 object Task102: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 102)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1224,9 +1836,15 @@ object Task102: SimpleTasks {
 }
 
 object Task103: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 103)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1236,9 +1854,15 @@ object Task103: SimpleTasks {
 }
 
 object Task104: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 104)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1248,9 +1872,15 @@ object Task104: SimpleTasks {
 }
 
 object Task105: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 105)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1260,9 +1890,15 @@ object Task105: SimpleTasks {
 }
 
 object Task106: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 106)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1272,9 +1908,15 @@ object Task106: SimpleTasks {
 }
 
 object Task107: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 107)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1284,9 +1926,15 @@ object Task107: SimpleTasks {
 }
 
 object Task108: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 108)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1296,9 +1944,15 @@ object Task108: SimpleTasks {
 }
 
 object Task109: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 109)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1308,9 +1962,15 @@ object Task109: SimpleTasks {
 }
 
 object Task110: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 110)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1320,9 +1980,15 @@ object Task110: SimpleTasks {
 }
 
 object Task111: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 111)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1332,9 +1998,15 @@ object Task111: SimpleTasks {
 }
 
 object Task112: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 112)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1344,9 +2016,15 @@ object Task112: SimpleTasks {
 }
 
 object Task113: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 113)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1356,9 +2034,15 @@ object Task113: SimpleTasks {
 }
 
 object Task114: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 114)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1368,9 +2052,15 @@ object Task114: SimpleTasks {
 }
 
 object Task115: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 115)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1380,9 +2070,15 @@ object Task115: SimpleTasks {
 }
 
 object Task116: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 116)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1392,9 +2088,15 @@ object Task116: SimpleTasks {
 }
 
 object Task117: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 117)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1404,9 +2106,15 @@ object Task117: SimpleTasks {
 }
 
 object Task118: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 118)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1416,9 +2124,15 @@ object Task118: SimpleTasks {
 }
 
 object Task119: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 119)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1428,9 +2142,15 @@ object Task119: SimpleTasks {
 }
 
 object Task120: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 120)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1440,9 +2160,15 @@ object Task120: SimpleTasks {
 }
 
 object Task121: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 121)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1452,9 +2178,15 @@ object Task121: SimpleTasks {
 }
 
 object Task122: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 122)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1464,9 +2196,15 @@ object Task122: SimpleTasks {
 }
 
 object Task123: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 123)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1476,9 +2214,15 @@ object Task123: SimpleTasks {
 }
 
 object Task124: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 124)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1488,9 +2232,15 @@ object Task124: SimpleTasks {
 }
 
 object Task125: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 125)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1500,9 +2250,15 @@ object Task125: SimpleTasks {
 }
 
 object Task126: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 126)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1512,9 +2268,15 @@ object Task126: SimpleTasks {
 }
 
 object Task127: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 127)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1524,9 +2286,15 @@ object Task127: SimpleTasks {
 }
 
 object Task128: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 128)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1536,9 +2304,15 @@ object Task128: SimpleTasks {
 }
 
 object Task129: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 129)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1548,9 +2322,15 @@ object Task129: SimpleTasks {
 }
 
 object Task130: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 130)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1560,9 +2340,15 @@ object Task130: SimpleTasks {
 }
 
 object Task131: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 131)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1572,9 +2358,15 @@ object Task131: SimpleTasks {
 }
 
 object Task132: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 132)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1584,9 +2376,15 @@ object Task132: SimpleTasks {
 }
 
 object Task133: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 133)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1596,9 +2394,15 @@ object Task133: SimpleTasks {
 }
 
 object Task134: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 134)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1608,9 +2412,15 @@ object Task134: SimpleTasks {
 }
 
 object Task135: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 135)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1620,9 +2430,15 @@ object Task135: SimpleTasks {
 }
 
 object Task136: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 136)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1632,9 +2448,15 @@ object Task136: SimpleTasks {
 }
 
 object Task137: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 137)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1644,9 +2466,15 @@ object Task137: SimpleTasks {
 }
 
 object Task138: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 138)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1656,9 +2484,15 @@ object Task138: SimpleTasks {
 }
 
 object Task139: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 139)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1668,9 +2502,15 @@ object Task139: SimpleTasks {
 }
 
 object Task140: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 140)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1680,9 +2520,15 @@ object Task140: SimpleTasks {
 }
 
 object Task141: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 141)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1692,9 +2538,15 @@ object Task141: SimpleTasks {
 }
 
 object Task142: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 142)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1704,9 +2556,15 @@ object Task142: SimpleTasks {
 }
 
 object Task143: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 143)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1716,9 +2574,15 @@ object Task143: SimpleTasks {
 }
 
 object Task144: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 144)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1728,9 +2592,15 @@ object Task144: SimpleTasks {
 }
 
 object Task145: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 145)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1740,9 +2610,15 @@ object Task145: SimpleTasks {
 }
 
 object Task146: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 146)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1752,9 +2628,15 @@ object Task146: SimpleTasks {
 }
 
 object Task147: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 147)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1764,9 +2646,15 @@ object Task147: SimpleTasks {
 }
 
 object Task148: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 148)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1776,9 +2664,15 @@ object Task148: SimpleTasks {
 }
 
 object Task149: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 149)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1788,9 +2682,15 @@ object Task149: SimpleTasks {
 }
 
 object Task150: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 150)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1800,9 +2700,15 @@ object Task150: SimpleTasks {
 }
 
 object Task151: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 151)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1812,9 +2718,15 @@ object Task151: SimpleTasks {
 }
 
 object Task152: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 152)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1824,9 +2736,15 @@ object Task152: SimpleTasks {
 }
 
 object Task153: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 153)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1836,9 +2754,15 @@ object Task153: SimpleTasks {
 }
 
 object Task154: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 154)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1848,9 +2772,15 @@ object Task154: SimpleTasks {
 }
 
 object Task155: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 155)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1860,9 +2790,15 @@ object Task155: SimpleTasks {
 }
 
 object Task156: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 156)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1872,9 +2808,15 @@ object Task156: SimpleTasks {
 }
 
 object Task157: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 157)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1884,9 +2826,15 @@ object Task157: SimpleTasks {
 }
 
 object Task158: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 158)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1896,9 +2844,15 @@ object Task158: SimpleTasks {
 }
 
 object Task159: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 159)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1908,9 +2862,15 @@ object Task159: SimpleTasks {
 }
 
 object Task160: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 160)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1920,9 +2880,15 @@ object Task160: SimpleTasks {
 }
 
 object Task161: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 161)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1932,9 +2898,15 @@ object Task161: SimpleTasks {
 }
 
 object Task162: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 162)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1944,9 +2916,15 @@ object Task162: SimpleTasks {
 }
 
 object Task163: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 163)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1956,9 +2934,15 @@ object Task163: SimpleTasks {
 }
 
 object Task164: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 164)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1968,9 +2952,15 @@ object Task164: SimpleTasks {
 }
 
 object Task165: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 165)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1980,9 +2970,15 @@ object Task165: SimpleTasks {
 }
 
 object Task166: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 166)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -1992,9 +2988,15 @@ object Task166: SimpleTasks {
 }
 
 object Task167: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 167)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2004,9 +3006,15 @@ object Task167: SimpleTasks {
 }
 
 object Task168: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 168)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2016,9 +3024,15 @@ object Task168: SimpleTasks {
 }
 
 object Task169: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 169)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2028,9 +3042,15 @@ object Task169: SimpleTasks {
 }
 
 object Task170: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 170)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2040,9 +3060,15 @@ object Task170: SimpleTasks {
 }
 
 object Task171: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 171)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2052,9 +3078,15 @@ object Task171: SimpleTasks {
 }
 
 object Task172: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 172)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2064,9 +3096,15 @@ object Task172: SimpleTasks {
 }
 
 object Task173: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 173)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2076,9 +3114,15 @@ object Task173: SimpleTasks {
 }
 
 object Task174: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 174)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2088,9 +3132,15 @@ object Task174: SimpleTasks {
 }
 
 object Task175: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 175)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2100,9 +3150,15 @@ object Task175: SimpleTasks {
 }
 
 object Task176: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 176)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2112,9 +3168,15 @@ object Task176: SimpleTasks {
 }
 
 object Task177: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 177)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2124,9 +3186,15 @@ object Task177: SimpleTasks {
 }
 
 object Task178: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 178)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2136,9 +3204,15 @@ object Task178: SimpleTasks {
 }
 
 object Task179: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 179)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2148,9 +3222,15 @@ object Task179: SimpleTasks {
 }
 
 object Task180: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 180)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2160,9 +3240,15 @@ object Task180: SimpleTasks {
 }
 
 object Task181: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 181)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2172,9 +3258,15 @@ object Task181: SimpleTasks {
 }
 
 object Task182: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 182)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2184,9 +3276,15 @@ object Task182: SimpleTasks {
 }
 
 object Task183: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 183)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2196,9 +3294,15 @@ object Task183: SimpleTasks {
 }
 
 object Task184: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 184)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2208,9 +3312,15 @@ object Task184: SimpleTasks {
 }
 
 object Task185: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 185)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2220,9 +3330,15 @@ object Task185: SimpleTasks {
 }
 
 object Task186: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 186)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2232,9 +3348,15 @@ object Task186: SimpleTasks {
 }
 
 object Task187: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 187)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2244,9 +3366,15 @@ object Task187: SimpleTasks {
 }
 
 object Task188: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 188)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2256,9 +3384,15 @@ object Task188: SimpleTasks {
 }
 
 object Task189: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 189)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2268,9 +3402,15 @@ object Task189: SimpleTasks {
 }
 
 object Task190: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 190)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2280,9 +3420,15 @@ object Task190: SimpleTasks {
 }
 
 object Task191: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 191)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2292,9 +3438,15 @@ object Task191: SimpleTasks {
 }
 
 object Task192: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 192)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2304,9 +3456,15 @@ object Task192: SimpleTasks {
 }
 
 object Task193: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 193)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2316,9 +3474,15 @@ object Task193: SimpleTasks {
 }
 
 object Task194: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 194)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2328,9 +3492,15 @@ object Task194: SimpleTasks {
 }
 
 object Task195: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 195)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2340,9 +3510,15 @@ object Task195: SimpleTasks {
 }
 
 object Task196: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 196)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2352,9 +3528,15 @@ object Task196: SimpleTasks {
 }
 
 object Task197: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 197)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2364,9 +3546,15 @@ object Task197: SimpleTasks {
 }
 
 object Task198: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 198)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2376,9 +3564,15 @@ object Task198: SimpleTasks {
 }
 
 object Task199: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 199)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
@@ -2388,3610 +3582,16 @@ object Task199: SimpleTasks {
 }
 
 object Task200: SimpleTasks {
+    private val currentDate = Calendar.getInstance()
 
+    private val androidTasks = AndroidTasks(
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+        Random(10).nextInt(),
+    )
+    
     override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
         currentDate.add(Calendar.DAY_OF_YEAR, 200)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task201: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 201)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task202: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 202)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task203: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 203)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task204: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 204)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task205: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 205)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task206: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 206)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task207: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 207)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task208: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 208)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task209: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 209)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task210: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 210)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task211: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 211)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task212: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 212)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task213: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 213)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task214: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 214)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task215: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 215)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task216: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 216)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task217: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 217)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task218: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 218)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task219: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 219)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task220: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 220)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task221: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 221)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task222: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 222)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task223: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 223)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task224: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 224)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task225: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 225)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task226: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 226)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task227: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 227)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task228: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 228)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task229: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 229)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task230: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 230)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task231: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 231)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task232: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 232)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task233: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 233)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task234: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 234)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task235: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 235)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task236: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 236)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task237: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 237)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task238: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 238)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task239: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 239)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task240: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 240)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task241: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 241)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task242: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 242)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task243: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 243)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task244: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 244)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task245: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 245)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task246: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 246)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task247: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 247)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task248: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 248)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task249: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 249)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task250: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 250)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task251: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 251)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task252: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 252)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task253: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 253)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task254: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 254)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task255: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 255)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task256: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 256)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task257: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 257)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task258: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 258)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task259: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 259)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task260: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 260)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task261: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 261)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task262: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 262)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task263: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 263)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task264: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 264)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task265: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 265)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task266: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 266)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task267: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 267)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task268: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 268)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task269: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 269)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task270: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 270)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task271: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 271)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task272: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 272)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task273: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 273)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task274: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 274)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task275: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 275)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task276: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 276)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task277: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 277)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task278: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 278)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task279: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 279)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task280: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 280)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task281: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 281)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task282: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 282)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task283: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 283)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task284: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 284)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task285: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 285)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task286: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 286)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task287: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 287)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task288: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 288)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task289: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 289)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task290: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 290)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task291: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 291)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task292: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 292)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task293: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 293)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task294: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 294)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task295: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 295)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task296: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 296)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task297: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 297)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task298: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 298)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task299: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 299)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task300: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 300)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task301: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 301)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task302: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 302)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task303: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 303)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task304: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 304)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task305: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 305)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task306: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 306)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task307: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 307)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task308: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 308)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task309: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 309)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task310: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 310)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task311: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 311)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task312: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 312)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task313: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 313)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task314: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 314)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task315: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 315)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task316: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 316)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task317: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 317)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task318: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 318)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task319: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 319)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task320: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 320)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task321: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 321)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task322: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 322)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task323: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 323)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task324: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 324)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task325: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 325)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task326: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 326)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task327: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 327)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task328: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 328)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task329: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 329)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task330: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 330)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task331: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 331)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task332: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 332)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task333: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 333)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task334: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 334)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task335: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 335)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task336: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 336)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task337: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 337)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task338: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 338)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task339: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 339)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task340: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 340)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task341: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 341)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task342: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 342)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task343: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 343)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task344: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 344)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task345: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 345)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task346: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 346)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task347: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 347)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task348: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 348)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task349: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 349)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task350: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 350)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task351: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 351)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task352: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 352)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task353: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 353)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task354: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 354)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task355: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 355)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task356: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 356)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task357: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 357)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task358: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 358)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task359: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 359)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task360: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 360)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task361: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 361)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task362: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 362)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task363: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 363)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task364: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 364)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task365: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 365)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task366: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 366)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task367: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 367)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task368: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 368)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task369: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 369)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task370: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 370)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task371: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 371)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task372: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 372)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task373: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 373)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task374: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 374)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task375: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 375)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task376: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 376)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task377: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 377)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task378: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 378)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task379: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 379)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task380: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 380)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task381: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 381)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task382: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 382)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task383: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 383)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task384: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 384)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task385: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 385)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task386: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 386)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task387: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 387)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task388: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 388)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task389: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 389)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task390: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 390)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task391: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 391)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task392: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 392)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task393: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 393)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task394: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 394)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task395: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 395)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task396: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 396)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task397: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 397)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task398: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 398)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task399: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 399)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task400: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 400)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task401: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 401)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task402: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 402)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task403: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 403)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task404: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 404)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task405: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 405)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task406: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 406)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task407: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 407)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task408: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 408)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task409: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 409)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task410: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 410)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task411: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 411)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task412: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 412)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task413: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 413)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task414: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 414)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task415: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 415)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task416: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 416)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task417: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 417)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task418: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 418)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task419: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 419)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task420: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 420)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task421: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 421)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task422: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 422)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task423: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 423)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task424: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 424)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task425: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 425)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task426: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 426)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task427: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 427)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task428: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 428)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task429: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 429)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task430: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 430)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task431: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 431)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task432: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 432)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task433: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 433)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task434: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 434)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task435: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 435)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task436: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 436)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task437: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 437)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task438: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 438)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task439: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 439)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task440: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 440)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task441: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 441)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task442: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 442)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task443: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 443)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task444: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 444)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task445: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 445)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task446: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 446)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task447: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 447)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task448: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 448)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task449: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 449)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task450: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 450)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task451: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 451)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task452: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 452)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task453: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 453)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task454: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 454)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task455: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 455)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task456: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 456)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task457: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 457)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task458: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 458)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task459: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 459)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task460: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 460)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task461: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 461)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task462: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 462)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task463: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 463)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task464: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 464)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task465: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 465)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task466: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 466)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task467: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 467)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task468: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 468)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task469: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 469)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task470: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 470)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task471: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 471)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task472: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 472)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task473: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 473)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task474: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 474)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task475: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 475)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task476: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 476)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task477: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 477)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task478: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 478)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task479: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 479)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task480: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 480)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task481: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 481)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task482: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 482)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task483: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 483)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task484: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 484)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task485: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 485)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task486: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 486)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task487: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 487)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task488: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 488)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task489: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 489)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task490: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 490)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task491: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 491)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task492: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 492)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task493: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 493)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task494: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 494)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task495: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 495)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task496: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 496)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task497: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 497)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task498: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 498)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task499: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 499)
-        val time = currentDate.time
-        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
-        return simpleDateFormat.format(time)
-    }
-
-}
-
-object Task500: SimpleTasks {
-
-    override fun showDate(): String {
-        val currentDate = Calendar.getInstance()
-        currentDate.add(Calendar.DAY_OF_YEAR, 500)
         val time = currentDate.time
         val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
         return simpleDateFormat.format(time)
