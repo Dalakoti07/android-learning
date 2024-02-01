@@ -18,7 +18,9 @@ import com.plcoding.bluetoothchat.presentation.BluetoothUiState
 fun DeviceScreen(
     state: BluetoothUiState,
     onStartScan: () -> Unit,
-    onStopScan: () -> Unit
+    onStopScan: () -> Unit,
+    onDeviceSelectClick: (BluetoothDevice)-> Unit = {},
+    onStartServer: ()-> Unit = {},
 ) {
     Column(
         modifier = Modifier
@@ -30,7 +32,8 @@ fun DeviceScreen(
             onClick = {},
             modifier = Modifier
                 .fillMaxWidth()
-                .weight(1f)
+                .weight(1f),
+            onDeviceSelectClick = onDeviceSelectClick,
         )
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -38,6 +41,9 @@ fun DeviceScreen(
         ) {
             Button(onClick = onStartScan) {
                 Text(text = "Start scan")
+            }
+            Button(onClick = onStartServer) {
+                Text(text = "Start server")
             }
             Button(onClick = onStopScan) {
                 Text(text = "Stop scan")
@@ -51,7 +57,8 @@ fun BluetoothDeviceList(
     pairedDevices: List<BluetoothDevice>,
     scannedDevices: List<BluetoothDevice>,
     onClick: (BluetoothDevice) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onDeviceSelectClick: (BluetoothDevice)-> Unit = {},
 ) {
     LazyColumn(
         modifier = modifier
