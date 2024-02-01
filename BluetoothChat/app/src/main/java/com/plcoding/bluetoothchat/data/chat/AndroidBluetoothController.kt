@@ -134,7 +134,7 @@ class AndroidBluetoothController(
 
     override fun startBluetoothServer(): Flow<ConnectionResult> {
         return flow {
-            if(!hasPermission(Manifest.permission.BLUETOOTH_CONNECT)){
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !hasPermission(Manifest.permission.BLUETOOTH_SCAN)) {
                 throw SecurityException("No bluetooth_connect permission")
             }
             currentServerSocket = bluetoothAdapter?.listenUsingRfcommWithServiceRecord(
@@ -147,6 +147,7 @@ class AndroidBluetoothController(
                     currentServerSocket?.accept()
                 }catch (e: Exception){
                     shouldLoop = false
+                    e.printStackTrace()
                     null
                 }
                 emit(ConnectionResult.ConnectionEstablished)
@@ -161,7 +162,7 @@ class AndroidBluetoothController(
 
     override fun connectToDevice(device: BluetoothDeviceDomain): Flow<ConnectionResult> {
         return flow {
-            if(!hasPermission(Manifest.permission.BLUETOOTH_CONNECT)){
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !hasPermission(Manifest.permission.BLUETOOTH_SCAN)) {
                 throw SecurityException("No bluetooth_connect permission")
             }
             val bluetoothDevice = bluetoothAdapter?.getRemoteDevice(device.address)
@@ -170,9 +171,6 @@ class AndroidBluetoothController(
                 UUID.fromString(id)
             )
             stopDiscovery()
-            if(bluetoothAdapter?.bondedDevices?.contains(bluetoothDevice) == false){
-
-            }
             currentClientSocket?.let {socket->
                 try {
                     socket.connect()

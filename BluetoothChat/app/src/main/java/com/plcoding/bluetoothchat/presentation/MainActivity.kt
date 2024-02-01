@@ -88,13 +88,11 @@ class MainActivity : ComponentActivity() {
                 })
                 LaunchedEffect(key1 = state.isConnected, block = {
                     if(state.isConnected){
-                        state.errorMessage?.let {
-                            Toast.makeText(
-                                applicationContext,
-                                "You are connected",
-                                Toast.LENGTH_SHORT,
-                            ).show()
-                        }
+                        Toast.makeText(
+                            applicationContext,
+                            "You are connected",
+                            Toast.LENGTH_SHORT,
+                        ).show()
                     }
                 })
                 Surface(
@@ -116,7 +114,9 @@ class MainActivity : ComponentActivity() {
                             DeviceScreen(
                                 state = state,
                                 onStartScan = viewModel::startScan,
-                                onStopScan = viewModel::stopScan
+                                onStopScan = viewModel::stopScan,
+                                onDeviceSelectClick = viewModel::connectToDevice,
+                                onStartServer = viewModel::waitForIncomingConnection,
                             )
                         }
                     }

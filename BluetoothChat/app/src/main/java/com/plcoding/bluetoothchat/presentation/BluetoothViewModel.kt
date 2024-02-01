@@ -24,6 +24,17 @@ class BluetoothViewModel @Inject constructor(
 ) : ViewModel() {
 
     private var deviceConnectionJob: Job? = null
+    private val _state = MutableStateFlow(BluetoothUiState())
+    val state = combine(
+        bluetoothController.scannedDevices,
+        bluetoothController.pairedDevices,
+        _state
+    ) { scannedDevices, pairedDevices, state ->
+        state.copy(
+            scannedDevices = scannedDevices,
+            pairedDevices = pairedDevices
+        )
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), _state.value)
 
     init {
         bluetoothController.isConnected().onEach { conn ->
@@ -41,18 +52,6 @@ class BluetoothViewModel @Inject constructor(
             }
         }.launchIn(viewModelScope)
     }
-
-    private val _state = MutableStateFlow(BluetoothUiState())
-    val state = combine(
-        bluetoothController.scannedDevices,
-        bluetoothController.pairedDevices,
-        _state
-    ) { scannedDevices, pairedDevices, state ->
-        state.copy(
-            scannedDevices = scannedDevices,
-            pairedDevices = pairedDevices
-        )
-    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), _state.value)
 
     fun startScan() {
         bluetoothController.startDiscovery()

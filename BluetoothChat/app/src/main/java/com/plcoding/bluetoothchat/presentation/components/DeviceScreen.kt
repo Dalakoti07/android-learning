@@ -29,7 +29,6 @@ fun DeviceScreen(
         BluetoothDeviceList(
             pairedDevices = state.pairedDevices,
             scannedDevices = state.scannedDevices,
-            onClick = {},
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f),
@@ -56,7 +55,6 @@ fun DeviceScreen(
 fun BluetoothDeviceList(
     pairedDevices: List<BluetoothDevice>,
     scannedDevices: List<BluetoothDevice>,
-    onClick: (BluetoothDevice) -> Unit,
     modifier: Modifier = Modifier,
     onDeviceSelectClick: (BluetoothDevice)-> Unit = {},
 ) {
@@ -76,7 +74,7 @@ fun BluetoothDeviceList(
                 text = device.name ?: "(No name)",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { onClick(device) }
+                    .clickable { onDeviceSelectClick(device) }
                     .padding(16.dp)
             )
         }
@@ -94,7 +92,7 @@ fun BluetoothDeviceList(
                 text = device.name ?: "(No name)",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { onClick(device) }
+                    .clickable { onDeviceSelectClick(device) }
                     .padding(16.dp)
             )
         }
