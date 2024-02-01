@@ -23,4 +23,6 @@ interface BluetoothController {
 
     fun errors(): SharedFlow<String>
 
+    suspend fun trySendMessage(message: String): BluetoothMessage?
+
 }
