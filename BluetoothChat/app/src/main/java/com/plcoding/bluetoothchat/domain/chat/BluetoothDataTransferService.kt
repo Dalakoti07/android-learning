@@ -17,7 +17,7 @@ class BluetoothDataTransferService(
 
     fun listenForIncomingMessage(): Flow<BluetoothMessage> {
         return flow {
-            if (socket.isConnected) {
+            if (!socket.isConnected) {
                 return@flow
             }
             val buffer = ByteArray(1024)

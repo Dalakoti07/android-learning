@@ -1,5 +1,6 @@
 package com.plcoding.bluetoothchat.presentation
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.plcoding.bluetoothchat.domain.chat.BluetoothController
@@ -18,6 +19,8 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
+private const val TAG = "BluetoothViewModel"
 
 @HiltViewModel
 class BluetoothViewModel @Inject constructor(
@@ -95,6 +98,7 @@ class BluetoothViewModel @Inject constructor(
                 }
             }
         }.catch {
+            Log.d(TAG, "listen: $it")
             bluetoothController.closeConnection()
             _state.update {
                 it.copy(

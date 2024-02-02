@@ -95,10 +95,10 @@ class AndroidBluetoothController(
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !hasPermission(Manifest.permission.BLUETOOTH_SCAN)) {
             throw SecurityException("No bluetooth_connect permission")
         }
-        if(dataTransferService == null) return null
+        if (dataTransferService == null) return null
         val bluetoothMessage = BluetoothMessage(
             message = message,
-            senderName = bluetoothAdapter?.name?: "Unkown name",
+            senderName = bluetoothAdapter?.name ?: "Unkown name",
             isFromLocalUser = true,
         )
         dataTransferService?.sendMessage(bluetoothMessage.toByteArray())
@@ -149,6 +149,7 @@ class AndroidBluetoothController(
     override fun release() {
         context.unregisterReceiver(foundDeviceReceiver)
         context.unregisterReceiver(bluetoothStateReceiver)
+        Log.d(TAG, "release: called ->")
         closeConnection()
     }
 
@@ -185,6 +186,9 @@ class AndroidBluetoothController(
                     )
                 }
             }
+        }.onCompletion {
+            Log.d(TAG, "startBluetoothServer: 189 -> $it")
+            // closeConnection()
         }.flowOn(Dispatchers.IO)
     }
 
@@ -214,12 +218,11 @@ class AndroidBluetoothController(
                     }
                 } catch (e: IOException) {
                     socket.close()
+                    Log.d(TAG, "Connect was interrupted -> ${e}")
                     currentClientSocket = null
                     emit(ConnectionResult.Error("Connect was interrupted"))
                 }
             }
-        }.onCompletion {
-            closeConnection()
         }.flowOn(Dispatchers.IO)
     }
 
