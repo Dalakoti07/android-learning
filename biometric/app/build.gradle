@@ -59,4 +59,7 @@ dependencies {
     testImplementation "junit:junit:$junit_versoin"
     androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+
+    implementation "androidx.biometric:biometric:1.0.1"
+
 }
