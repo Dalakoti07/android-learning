@@ -17,6 +17,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 import java.io.FileInputStream
+import kotlin.math.log
 
 private const val TAG = "RetrofitClient"
 
@@ -61,15 +62,29 @@ object RetrofitClient {
             fileInputStream.copyTo(it)
         }
 
-        val requestBody = file.asRequestBody("text/plain".toMediaTypeOrNull())
-        val part = MultipartBody.Part.createFormData("file", file.name, requestBody)
+        val requestBody = ProgressRequestBody(
+            file,
+            "text/plain".toMediaTypeOrNull(),
+            object : UploadCallbacks{
+                override fun onProgressUpdate(percentage: Int) {
+                    Log.d(TAG, "onProgressUpdate $percentage")
+                }
 
-        // Create Retrofit instance and start upload (not shown here, refer to Retrofit setup documentation)
+                override fun onError() {
+                    Log.d(TAG, "onError ")
+                }
+
+                override fun onFinish() {
+                    Log.d(TAG, "onFinish ")
+                }
+            }
+        )
+        val part = MultipartBody.Part.createFormData("file", file.name, requestBody)
 
         parcelFileDescriptor?.close()
         try {
             val call = apiService.uploadFile(part)
-
+            Log.d(TAG, "uploadFile success")
         }catch (e: Exception){
             Log.d(TAG, "uploadFile failed ")
         }
