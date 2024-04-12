@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.dalakoti07.android.uploads.networks.RetrofitClient
+import com.dalakoti07.android.uploads.networks.optimise.OptimisedApiCalls
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -31,6 +32,7 @@ class MainViewModel(private val application: Application) : AndroidViewModel(app
     )
     val state: StateFlow<MainScreenState>
         get() = _state
+    private val optimisedApiCalls = OptimisedApiCalls()
 
 
     // Function to upload file using Retrofit
@@ -54,7 +56,7 @@ class MainViewModel(private val application: Application) : AndroidViewModel(app
     fun startRestCalls() {
         viewModelScope.launch {
             val response = performConcurrentApiCallsAndCalculateAverage(
-                n = 100,
+                n = 10,
             )
             _state.update {
                 state.value.copy(
@@ -66,7 +68,8 @@ class MainViewModel(private val application: Application) : AndroidViewModel(app
     }
 
     private suspend fun performConcurrentApiCallsAndCalculateAverage(n: Int): Double = withContext(
-        Dispatchers.IO) {
+        Dispatchers.IO
+    ) {
         val timeTakenList = mutableListOf<Deferred<Int>>()
 
         for (i in 1..n) {
