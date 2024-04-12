@@ -32,7 +32,6 @@ class MainViewModel(private val application: Application) : AndroidViewModel(app
     )
     val state: StateFlow<MainScreenState>
         get() = _state
-    private val optimisedApiCalls = OptimisedApiCalls()
 
 
     // Function to upload file using Retrofit
@@ -56,7 +55,7 @@ class MainViewModel(private val application: Application) : AndroidViewModel(app
     fun startRestCalls() {
         viewModelScope.launch {
             val response = performConcurrentApiCallsAndCalculateAverage(
-                n = 10,
+                n = 100,
             )
             _state.update {
                 state.value.copy(
