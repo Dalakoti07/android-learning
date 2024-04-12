@@ -51,6 +51,25 @@ object RetrofitClient {
         }
     }
 
+    suspend fun postDataToServer(): Int {
+        val startTime = System.currentTimeMillis()
+        return try {
+            val largeString = "x".repeat(10240)  // 10KB of 'x'
+            val requestData = RequestData(message = largeString)
+            val responseBody = apiService.postData(
+                requestData
+            )
+            val endTime = System.currentTimeMillis()
+            val responseTime = endTime - startTime
+
+            //println("Response time: $responseTime ms")
+            responseTime.toInt()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            -1
+        }
+    }
+
     suspend fun uploadFile(
         context: Context,
         fileUri: Uri,
