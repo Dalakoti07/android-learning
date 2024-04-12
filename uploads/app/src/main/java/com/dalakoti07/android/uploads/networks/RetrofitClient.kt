@@ -34,9 +34,9 @@ object RetrofitClient {
         return retrofit!!
     }
 
-    private val apiService = getClient("https://004d-103-87-59-2.ngrok-free.app/").create(ApiService::class.java)
+    private val apiService = getClient("https://4097-103-87-59-2.ngrok-free.app/").create(ApiService::class.java)
 
-    private suspend fun getDataFromServer(): Int {
+    suspend fun getDataFromServer(): Int {
         val startTime = System.currentTimeMillis()
         return try {
             val responseBody = apiService.fetchData()
@@ -54,7 +54,8 @@ object RetrofitClient {
     suspend fun uploadFile(
         context: Context,
         fileUri: Uri,
-    ){
+        onUpdates: (Int)-> Unit,
+    ): Int{
         val parcelFileDescriptor = context.contentResolver.openFileDescriptor(fileUri, "r", null)
         val fileInputStream = FileInputStream(parcelFileDescriptor?.fileDescriptor)
         val file = File(context.cacheDir, context.contentResolver.getFileName(fileUri))
@@ -68,6 +69,7 @@ object RetrofitClient {
             object : UploadCallbacks{
                 override fun onProgressUpdate(percentage: Int) {
                     Log.d(TAG, "onProgressUpdate $percentage")
+                    onUpdates(percentage)
                 }
 
                 override fun onError() {
@@ -82,33 +84,17 @@ object RetrofitClient {
         val part = MultipartBody.Part.createFormData("file", file.name, requestBody)
 
         parcelFileDescriptor?.close()
-        try {
+        return try {
+            val startTime = System.currentTimeMillis()
             val call = apiService.uploadFile(part)
+            val endTime = System.currentTimeMillis()
+            val responseTime = endTime - startTime
             Log.d(TAG, "uploadFile success")
+            responseTime.toInt()
         }catch (e: Exception){
             Log.d(TAG, "uploadFile failed ")
+            0
         }
-    }
-
-
-    suspend fun performConcurrentApiCallsAndCalculateAverage(n: Int): Double = withContext(Dispatchers.IO) {
-        val timeTakenList = mutableListOf<Deferred<Int>>()
-
-        for (i in 1..n) {
-            val timeTakenDeferred = async { getDataFromServer() }
-            timeTakenList.add(timeTakenDeferred)
-        }
-
-        val totalTimeValues = mutableListOf<Int>()
-        val totalTimeTaken = timeTakenList.sumOf {
-            val timeConsumed = it.await()
-            totalTimeValues.add(timeConsumed)
-            timeConsumed
-        }
-        val averageTimeTaken = totalTimeTaken.toDouble() / n
-        println("time take array -> $totalTimeValues")
-
-        averageTimeTaken
     }
 
 }
