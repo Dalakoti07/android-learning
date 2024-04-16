@@ -57,7 +57,7 @@ object RetrofitClient {
         return retrofit!!
     }
 
-    private val apiService = getClient("https://4097-103-87-59-2.ngrok-free.app/").create(ApiService::class.java)
+    private val apiService = getClient("https://49aa-103-87-59-62.ngrok-free.app/").create(ApiService::class.java)
 
     suspend fun getDataFromServer(): Int {
         val startTime = System.currentTimeMillis()
