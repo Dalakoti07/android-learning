@@ -7,14 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupWindow
 import com.dalakoti07.android.uiexperiments.databinding.ActivityMainBinding
+import com.dalakoti07.android.uiexperiments.databinding.TooltipViewBinding
 import com.dalakoti07.android.uiexperiments.showCase.OverlayView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var overLayView: OverlayView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setShowCase() {
-        val overLayView = OverlayView(
+        overLayView = OverlayView(
             context = this,
         ).apply {
             layoutParams = ViewGroup.LayoutParams(
@@ -52,9 +55,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showTooltip() {
-        val tooltipView = LayoutInflater.from(this).inflate(R.layout.tooltip_view, null)
+//        val tooltipView = LayoutInflater.from(this).inflate(R.layout.tooltip_view, null)
+        val tooltipView = TooltipViewBinding.inflate(layoutInflater, null, false)
         val popupWindow = PopupWindow(
-            tooltipView,
+            tooltipView.root,
             ViewGroup.LayoutParams.WRAP_CONTENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
@@ -74,5 +78,11 @@ class MainActivity : AppCompatActivity() {
 
         // Show the PopupWindow
         popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY, x.toInt(), y)
+        tooltipView.btnOk.setOnClickListener {
+            popupWindow.dismiss()
+            binding.mainLayout.removeView(
+                overLayView
+            )
+        }
     }
 }
