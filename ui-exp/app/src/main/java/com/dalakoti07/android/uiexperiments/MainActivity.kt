@@ -5,7 +5,10 @@ import android.graphics.Rect
 import android.graphics.RectF
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.PopupWindow
 import com.dalakoti07.android.uiexperiments.databinding.ActivityMainBinding
 import com.dalakoti07.android.uiexperiments.showCase.OverlayView
 
@@ -44,6 +47,32 @@ class MainActivity : AppCompatActivity() {
                 location[1] + targetView.height.toFloat(),
             )
             overLayView.setHighlightArea(rect)
+            showTooltip()
         }
+    }
+
+    private fun showTooltip() {
+        val tooltipView = LayoutInflater.from(this).inflate(R.layout.tooltip_view, null)
+        val popupWindow = PopupWindow(
+            tooltipView,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+
+        // Set up touchable and focusable if you need interaction
+        popupWindow.isFocusable = true
+        popupWindow.isTouchable = true
+
+        // Calculate position
+        val location = IntArray(2)
+        val anchorView = binding.cardView
+        location[0] = anchorView.left
+        location[1] = anchorView.top
+        // define X
+        val x = location[0] + anchorView.width * .1 // + anchorView.width/2 + 200
+        val y = location[1] + anchorView.height + 100
+
+        // Show the PopupWindow
+        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY, x.toInt(), y)
     }
 }
