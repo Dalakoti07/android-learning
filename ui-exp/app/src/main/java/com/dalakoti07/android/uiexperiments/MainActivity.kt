@@ -1,6 +1,8 @@
 package com.dalakoti07.android.uiexperiments
 
+import android.graphics.Color
 import android.graphics.Rect
+import android.graphics.RectF
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
@@ -33,12 +35,13 @@ class MainActivity : AppCompatActivity() {
         val targetView = binding.cardView
         targetView.post {
             val location = IntArray(2)
-            targetView.getLocationInWindow(location)
-            val rect = Rect(
-                location[0],
-                location[1],
-                location[0] + targetView.width,
-                location[1] + targetView.height,
+            location[0] = targetView.left
+            location[1] = targetView.top
+            val rect = RectF(
+                location[0].toFloat(),
+                location[1].toFloat(),
+                location[0] + targetView.width.toFloat(),
+                location[1] + targetView.height.toFloat(),
             )
             overLayView.setHighlightArea(rect)
         }

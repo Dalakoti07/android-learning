@@ -7,6 +7,8 @@ import android.graphics.Paint
 import android.graphics.PorterDuff
 import android.graphics.PorterDuffXfermode
 import android.graphics.Rect
+import android.graphics.RectF
+import android.graphics.Region
 import android.util.AttributeSet
 import android.view.View
 
@@ -19,20 +21,21 @@ class OverlayView(context: Context, attrs: AttributeSet? = null) : View(context,
         xfermode = PorterDuffXfermode(PorterDuff.Mode.CLEAR) // To clear the area
     }
 
-    private var highlightRect: Rect? = null
+    private var highlightRect: RectF? = null
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         // Draw the semi-transparent overlay
-        canvas.drawPaint(overlayPaint)
 
         // Draw a clear rectangle over the area to be highlighted
         highlightRect?.let {
-            canvas.drawRect(it, clearPaint)
+            canvas.clipRect(it, Region.Op.DIFFERENCE)
+            //canvas.drawRect(it, clearPaint)
         }
+        canvas.drawPaint(overlayPaint)
     }
 
-    fun setHighlightArea(rect: Rect) {
+    fun setHighlightArea(rect: RectF) {
         highlightRect = rect
         invalidate() // Redraw the view with the updated highlight area
     }
