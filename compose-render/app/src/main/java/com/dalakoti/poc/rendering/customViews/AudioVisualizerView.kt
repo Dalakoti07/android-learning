@@ -1,5 +1,6 @@
 package com.dalakoti.poc.rendering.customViews
 
+import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
@@ -7,6 +8,8 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
+import android.view.animation.LinearInterpolator
+import kotlin.math.PI
 import kotlin.math.sin
 
 /**
@@ -34,48 +37,50 @@ class AudioVisualizerView @JvmOverloads constructor(
     companion object {
         private const val TAG = "AudioVisualizerView"
         private const val BAR_COUNT = 20
-        private const val ANIM_INTERVAL_MS = 80L
     }
 
+    // purple color
     private val barPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = Color.parseColor("#6200EE")
     }
 
+    // white bg for rect
     private val bgPaint = Paint().apply {
         color = Color.parseColor("#F3F3F3")
     }
 
     // Amplitudes in [0f, 1f]
     private val amplitudes = FloatArray(BAR_COUNT) { 0f }
-    private var phase = 0.0
 
-    private val animRunnable = object : Runnable {
-        override fun run() {
-            tick()
-            postDelayed(this, ANIM_INTERVAL_MS)
+    // ValueAnimator hooks into Choreographer internally — fires once per vsync,
+    // same signal Compose's infiniteRepeatable uses. postDelayed was 80ms (~12fps)
+    // and not vsync-aligned; this is frame-perfect at 60fps.
+    private val animator = ValueAnimator.ofFloat(0f, (2 * PI).toFloat()).apply {
+        duration = 2000
+        repeatCount = ValueAnimator.INFINITE
+        repeatMode = ValueAnimator.RESTART
+        interpolator = LinearInterpolator()
+        addUpdateListener { anim ->
+            val phase = anim.animatedValue as Float
+            for (i in 0 until BAR_COUNT) {
+                amplitudes[i] = ((sin((phase + i * 0.5).toDouble()) + 1.0) / 2.0).toFloat()
+            }
+            // Only pixel content changes → invalidate() is sufficient.
+            // requestLayout() is NOT called — bar heights are computed in onDraw
+            // from the already-known view size.
+            //Log.d(TAG, "tick → invalidate() (no layout pass needed)")
+            invalidate()
         }
     }
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
-        post(animRunnable)
+        animator.start()
     }
 
     override fun onDetachedFromWindow() {
-        removeCallbacks(animRunnable)
+        animator.cancel()
         super.onDetachedFromWindow()
-    }
-
-    private fun tick() {
-        phase += 0.3
-        for (i in 0 until BAR_COUNT) {
-            amplitudes[i] = ((sin(phase + i * 0.5) + 1.0) / 2.0).toFloat()
-        }
-        // Only pixel content changes → invalidate() is sufficient.
-        // requestLayout() is NOT called — bar heights are computed inside
-        // onDraw from the already-known view size.
-        Log.d(TAG, "tick → invalidate() (no layout pass needed)")
-        invalidate()
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
@@ -89,7 +94,7 @@ class AudioVisualizerView @JvmOverloads constructor(
     }
 
     override fun onDraw(canvas: Canvas) {
-        Log.d(TAG, "onDraw")
+        //Log.d(TAG, "onDraw")
         val w = width.toFloat()
         val h = height.toFloat()
 
