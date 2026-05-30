@@ -86,10 +86,18 @@ class AudioVisualizerView @JvmOverloads constructor(
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         val modeW = MeasureSpec.getMode(widthMeasureSpec)
         val modeH = MeasureSpec.getMode(heightMeasureSpec)
-        Log.d(
-            TAG,
-            "onMeasure modeW=${modeStr(modeW)} modeH=${modeStr(modeH)}"
-        )
+        // Walk up the stack and print every frame that belongs to Android framework
+        // ViewGroup/View measure machinery so we can see exactly who triggered this pass.
+        val stack = Thread.currentThread().stackTrace
+            .drop(1) // skip getStackTrace itself
+            .filter {
+                it.className.startsWith("android.view") ||
+                it.className.startsWith("androidx.") ||
+                it.className.contains("com.dalakoti")
+            }
+            .take(8)
+            .joinToString("\n    ") { "${it.className.substringAfterLast('.')}::${it.methodName}" }
+        Log.d(TAG, "onMeasure modeW=${modeStr(modeW)} modeH=${modeStr(modeH)}\n    $stack")
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
     }
 
