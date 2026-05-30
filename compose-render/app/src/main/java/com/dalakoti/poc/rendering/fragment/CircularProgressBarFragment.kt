@@ -17,11 +17,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import com.dalakoti.poc.rendering.compose.CircularProgressBar
 import com.dalakoti.poc.rendering.databinding.CircularProgressBarBinding
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 class CircularProgressBarFragment: Fragment() {
 
@@ -67,8 +64,7 @@ class CircularProgressBarFragment: Fragment() {
 
     override fun onResume() {
         super.onResume()
-        lifecycleScope.launch {
-            delay(2*1000)
+        binding.btnViewIncrease.setOnClickListener {
             binding.circularProgress.progress = 90f
         }
     }
