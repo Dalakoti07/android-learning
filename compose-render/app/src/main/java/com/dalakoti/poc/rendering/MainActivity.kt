@@ -20,6 +20,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.dalakoti.poc.rendering.compose.CircularProgressBar
 import com.dalakoti.poc.rendering.databinding.ActivityMainBinding
+import com.dalakoti.poc.rendering.fragment.CircularProgressBarFragment
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -37,38 +38,10 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.composeView.setContent {
-            var progress by remember {
-                mutableStateOf(75f)
-            }
-            Column(
-                modifier = Modifier.fillMaxWidth().padding(
-                    top = 20.dp,
-                ),
-                horizontalAlignment = Alignment.CenterHorizontally,
-            ) {
-                CircularProgressBar(
-                    progress = progress,
-                )
-                Button(
-                    modifier = Modifier.padding(
-                        top = 10.dp,
-                    ),
-                    onClick = {
-                        progress = 90f
-                    }
-                ) {
-                    Text("Increase")
-                }
-            }
-        }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        lifecycleScope.launch {
-            delay(2*1000)
-            binding.circularProgress.progress = 90f
-        }
+        supportFragmentManager.beginTransaction().replace(
+            binding.root.id,
+            CircularProgressBarFragment()
+        )
+            .commit()
     }
 }
