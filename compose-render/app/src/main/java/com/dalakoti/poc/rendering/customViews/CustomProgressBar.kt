@@ -43,13 +43,14 @@ class CircularProgressView @JvmOverloads constructor(
         widthMeasureSpec: Int,
         heightMeasureSpec: Int
     ) {
-        Log.d(TAG, "onMeasure")
-
-        val size = 100
+        // given the exact width and height from XML, this custom view just respects that and pass forward
+        val widthMode = MeasureSpec.getMode(widthMeasureSpec)
+        val widthSize = MeasureSpec.getSize(widthMeasureSpec)
+        Log.d(TAG, "onMeasure mode=$widthMode size=$widthSize $widthMeasureSpec $heightMeasureSpec")
 
         setMeasuredDimension(
-            resolveSize(size, widthMeasureSpec),
-            resolveSize(size, heightMeasureSpec)
+            widthMeasureSpec,
+            heightMeasureSpec
         )
     }
 
@@ -60,6 +61,7 @@ class CircularProgressView @JvmOverloads constructor(
         right: Int,
         bottom: Int
     ) {
+        // super simple and nothing in this example, on layout logic, no child placement
         super.onLayout(
             changed,
             left,
@@ -76,6 +78,7 @@ class CircularProgressView @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        // drawing the circle and arc on top of it
 
         Log.d(TAG, "onDraw")
 
