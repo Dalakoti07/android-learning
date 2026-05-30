@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         }
         supportFragmentManager.beginTransaction().replace(
             binding.root.id,
-            CircularProgressBarFragment(),
-//            CustomChipFragment(),
+//            CircularProgressBarFragment(),
+            CustomChipFragment(),
         ).commit()
     }
 }

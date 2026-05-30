@@ -3,6 +3,7 @@ package com.dalakoti.poc.rendering.fragment
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -22,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import com.dalakoti.poc.rendering.compose.Chip
 import com.dalakoti.poc.rendering.compose.FlowChipLayout
+import com.dalakoti.poc.rendering.compose.debugRendering
 import com.dalakoti.poc.rendering.databinding.FragmentCustomChipBinding
 
 class CustomChipFragment : Fragment() {
@@ -92,6 +95,12 @@ class CustomChipFragment : Fragment() {
             var isFlowMode by remember { mutableStateOf(true) }
 
             Column(modifier = Modifier.padding(bottom = 16.dp)) {
+
+                // StaticDebugLabel receives a constant String — its input never changes.
+                // When isFlowMode toggles, the Column lambda re-executes but Compose sees
+                // the same argument and skips recomposing/remeasuring this composable entirely.
+                StaticDebugLabel("Compose chip layout — sibling, not affected by toggle")
+
                 FlowChipLayout(
                     modifier = Modifier.fillMaxWidth(),
                     maxChipsPerRow = if (isFlowMode) Int.MAX_VALUE else 2,
@@ -103,8 +112,11 @@ class CustomChipFragment : Fragment() {
                     }
                 }
 
+                // Button text changes on every toggle — expect Measure+Layout+Draw every time
                 Button(
-                    modifier = Modifier.padding(top = 16.dp),
+                    modifier = Modifier
+                        .padding(top = 16.dp)
+                        .debugRendering("ToggleButton"),
                     onClick = { isFlowMode = !isFlowMode }
                 ) {
                     Text(if (isFlowMode) "Switch to 2 per row" else "Switch to flow")
@@ -112,4 +124,15 @@ class CustomChipFragment : Fragment() {
             }
         }
     }
+}
+
+// Extracted as a named composable so Compose can identify it as a stable call site.
+// Constant String input → Compose skips recomposition when parent re-executes.
+@Composable
+private fun StaticDebugLabel(text: String) {
+    Log.d("StaticDebugLabel", "Recomposition")
+    Text(
+        text = text,
+        modifier = Modifier.debugRendering("StaticDebugLabel"),
+    )
 }

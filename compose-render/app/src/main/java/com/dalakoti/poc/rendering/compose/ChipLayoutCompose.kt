@@ -48,9 +48,8 @@ fun FlowChipLayout(
 
     Layout(
         content = content,
-        modifier = modifier,
+        modifier = modifier.debugRendering(TAG),
     ) { measurables, constraints ->
-        Log.d(TAG, "Measure phase childCount=${measurables.size}")
 
         val placeables = measurables.map { it.measure(constraints.copy(minWidth = 0, minHeight = 0)) }
 
@@ -83,8 +82,6 @@ fun FlowChipLayout(
         }
 
         val totalHeight = currentY + rowHeight
-
-        Log.d(TAG, "Layout phase totalHeight=$totalHeight")
 
         layout(constraints.maxWidth, totalHeight) {
             for (item in placed) {

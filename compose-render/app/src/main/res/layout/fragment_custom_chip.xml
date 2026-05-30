@@ -2,10 +2,9 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <com.dalakoti.poc.rendering.customViews.DebugLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -53,6 +52,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp" />
 
-    </LinearLayout>
+    </com.dalakoti.poc.rendering.customViews.DebugLinearLayout>
 
 </ScrollView>
