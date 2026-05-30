@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dalakoti.poc.rendering.customViews.DebugLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ── XML section ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML Audio Visualizer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Each bar lives in a LinearLayout with layout_weight → 2 onMeasure calls per bar."
+            android:textSize="12sp"
+            android:textColor="#666666" />
+
+        <!--
+            KEY: this horizontal LinearLayout uses layout_weight on each cell.
+            LinearLayout distributes weight in a second measure pass,
+            so every AudioVisualizerView inside fires onMeasure TWICE.
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.dalakoti.poc.rendering.customViews.AudioVisualizerView
+                android:id="@+id/xml_visualizer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ── Compose section ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compose Audio Visualizer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Canvas measured exactly once. Only Canvas recomposes on each frame."
+            android:textSize="12sp"
+            android:textColor="#666666" />
+
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/compose_visualizer"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="12dp" />
+
+    </com.dalakoti.poc.rendering.customViews.DebugLinearLayout>
+
+</ScrollView>
