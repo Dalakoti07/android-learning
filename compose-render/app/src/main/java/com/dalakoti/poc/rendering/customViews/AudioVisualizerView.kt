@@ -95,7 +95,7 @@ class AudioVisualizerView @JvmOverloads constructor(
                 it.className.startsWith("androidx.") ||
                 it.className.contains("com.dalakoti")
             }
-            .take(8)
+            .take(20)
             .joinToString("\n    ") { "${it.className.substringAfterLast('.')}::${it.methodName}" }
         Log.d(TAG, "onMeasure modeW=${modeStr(modeW)} modeH=${modeStr(modeH)}\n    $stack")
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
