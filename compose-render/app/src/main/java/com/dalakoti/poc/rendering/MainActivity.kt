@@ -5,10 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.dalakoti.poc.rendering.compose.CircularProgressBar
 import com.dalakoti.poc.rendering.databinding.ActivityMainBinding
 import com.dalakoti.poc.rendering.fragment.CircularProgressBarFragment
-import com.dalakoti.poc.rendering.fragment.CustomChipFragment
 
 class MainActivity : AppCompatActivity() {
 
